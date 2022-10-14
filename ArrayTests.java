@@ -48,4 +48,10 @@ public class ArrayTests {
     double result = ArrayExamples.averageWithoutLowest(a);
     assertEquals(2.5, result, 0.01);
   }
+  @Test
+  public void testAverageRepetitive() {
+    double[] a = {1, 1, 1, 1, 1};
+    double result = ArrayExamples.averageWithoutLowest(a);
+    assertEquals(1, result, 0.01);
+  }
 }
