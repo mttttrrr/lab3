@@ -32,20 +32,20 @@ public class ArrayTests {
   public void testAverageEmpty() {
     double[] a = {};
     double result = ArrayExamples.averageWithoutLowest(a);
-    assertEquals(0, result);
+    assertEquals(0, result, 0.01);
   }
 
   @Test
   public void testAverageUnique() {
     double[] a = {1, 2, 3, 4, -5};
     double result = ArrayExamples.averageWithoutLowest(a);
-    assertEquals(10, result);
+    assertEquals(2.5, result, 0.01);
   }
 
     @Test
   public void testAverageMany() {
     double[] a = {1, 1, 2, 3, 4};
     double result = ArrayExamples.averageWithoutLowest(a);
-    assertEquals(10, result);
+    assertEquals(2.5, result, 0.01);
   }
 }
